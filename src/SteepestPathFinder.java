@@ -31,8 +31,16 @@ public class SteepestPathFinder {
 
         if (!isAnySidePossible(srcX, srcY, currentValue)) {
             path.add(input[srcX][srcY]);
-            if (steepestPath == null || steepestPath.size() == 0 || steepestPath.size() < path.size()) {
-                steepestPath = new ArrayList<Integer>(path);
+            if (steepestPath == null || steepestPath.size() == 0 || steepestPath.size() <= path.size()) {
+                if(steepestPath.size() == path.size()){
+                    int overAllSteepDepth = calculateSteepDepth(steepestPath);
+                    int currentSteepDepth = calculateSteepDepth(path);
+                    if (currentSteepDepth > overAllSteepDepth) {
+                        steepestPath = new ArrayList<Integer>(path);
+                    }
+                }else{
+                    steepestPath = new ArrayList<Integer>(path);
+                }
             }
             System.out.println("Reached end, path is " + path.toString());
             path.remove(path.size() - 1);
@@ -92,6 +100,10 @@ public class SteepestPathFinder {
         boolean isUpPossible = aBoolean(srcX - 1, srcY, srcValue);
         boolean isDownPossible = aBoolean(srcX + 1, srcY, srcValue);
         return isLeftPossible || isRightPossible || isUpPossible || isDownPossible;
+    }
+
+    private static int calculateSteepDepth(ArrayList<Integer> steepestPath) {
+        return steepestPath.get(0) - steepestPath.get(steepestPath.size() - 1);
     }
 
 

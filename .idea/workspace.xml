@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4339899e-cfa6-4d52-b096-89806b8044f7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Skiing.java" afterPath="$PROJECT_DIR$/src/Skiing.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SteepestPathFinder.java" afterPath="$PROJECT_DIR$/src/SteepestPathFinder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Timepass.iws" />
@@ -72,7 +70,7 @@
       <file leaf-file-name="Skiing.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Skiing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="0" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.048859935" vertical-offset="810" max-vertical-offset="1575">
+            <state line="93" column="5" selection-start="3485" selection-end="3648" vertical-scroll-proportion="1.0904523" vertical-offset="961" max-vertical-offset="1575">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#405#414#0" expanded="true" />
@@ -94,7 +92,7 @@
       <file leaf-file-name="SteepestPathFinder.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SteepestPathFinder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="0" selection-start="2547" selection-end="2547" vertical-scroll-proportion="0.0" vertical-offset="932" max-vertical-offset="1695">
+            <state line="39" column="21" selection-start="1574" selection-end="1574" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1875">
               <folding />
             </state>
           </provider>
@@ -103,7 +101,7 @@
       <file leaf-file-name="map.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/map.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="998" column="1839" selection-start="4252534" selection-end="4252534" vertical-scroll-proportion="-598.8" vertical-offset="0" max-vertical-offset="15075">
+            <state line="30" column="1298" selection-start="128952" selection-end="128953" vertical-scroll-proportion="-3.6666667" vertical-offset="263" max-vertical-offset="15075">
               <folding />
             </state>
           </provider>
@@ -134,8 +132,8 @@
         <option value="$PROJECT_DIR$/src/HelloWorld.java" />
         <option value="$PROJECT_DIR$/src/input.txt" />
         <option value="$PROJECT_DIR$/src/map.txt" />
-        <option value="$PROJECT_DIR$/src/SteepestPathFinder.java" />
         <option value="$PROJECT_DIR$/src/Skiing.java" />
+        <option value="$PROJECT_DIR$/src/SteepestPathFinder.java" />
       </list>
     </option>
   </component>
@@ -485,16 +483,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977098" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48396948" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -592,21 +590,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/map.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="998" column="1839" selection-start="4252534" selection-end="4252534" vertical-scroll-proportion="-598.8" vertical-offset="0" max-vertical-offset="15075">
+        <state line="30" column="1298" selection-start="128952" selection-end="128953" vertical-scroll-proportion="-3.6666667" vertical-offset="263" max-vertical-offset="15075">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SteepestPathFinder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="0" selection-start="2547" selection-end="2547" vertical-scroll-proportion="0.0" vertical-offset="932" max-vertical-offset="1695">
+        <state line="39" column="21" selection-start="1574" selection-end="1574" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1875">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Skiing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="0" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.048859935" vertical-offset="810" max-vertical-offset="1575">
+        <state line="93" column="5" selection-start="3485" selection-end="3648" vertical-scroll-proportion="1.0904523" vertical-offset="961" max-vertical-offset="1575">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#405#414#0" expanded="true" />
