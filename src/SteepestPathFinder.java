@@ -29,7 +29,7 @@ public class SteepestPathFinder {
             path = new ArrayList<Integer>();
         }
 
-        if (srcX == noOfColumns - 1 && (!isLeftOrRightPossible(srcX, srcY, currentValue))) {
+        if (!isAnySidePossible(srcX, srcY, currentValue)) {
             path.add(input[srcX][srcY]);
             if (steepestPath == null || steepestPath.size() == 0 || steepestPath.size() < path.size()) {
                 steepestPath = new ArrayList<Integer>(path);
@@ -78,6 +78,20 @@ public class SteepestPathFinder {
         boolean isLeftPossible = aBoolean(srcX, srcY - 1, srcValue);
         boolean isRightPossible = aBoolean(srcX, srcY + 1, srcValue);
         return isLeftPossible || isRightPossible;
+    }
+
+    private boolean isUpOrDownPossible(int srcX, int srcY, int srcValue) {
+        boolean isUpPossible = aBoolean(srcX - 1, srcY, srcValue);
+        boolean isDownPossible = aBoolean(srcX + 1, srcY + 1, srcValue);
+        return isUpPossible || isDownPossible;
+    }
+
+    private boolean isAnySidePossible(int srcX, int srcY, int srcValue){
+        boolean isLeftPossible = aBoolean(srcX, srcY - 1, srcValue);
+        boolean isRightPossible = aBoolean(srcX, srcY + 1, srcValue);
+        boolean isUpPossible = aBoolean(srcX - 1, srcY, srcValue);
+        boolean isDownPossible = aBoolean(srcX + 1, srcY, srcValue);
+        return isLeftPossible || isRightPossible || isUpPossible || isDownPossible;
     }
 
 

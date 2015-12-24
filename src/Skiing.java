@@ -5,7 +5,7 @@ public class Skiing {
     final static int maxColumns = 1000, maxRows = 1000;
     final static int[][] sampleInput = new int[][]{
             {4, 8, 7, 3},
-            {2, 5, 9, 3},
+            {2, 5, 6, 3},
             {6, 3, 2, 5},
             {4, 4, 1, 6}};
     static int[][] input = new int[maxColumns][maxRows];
@@ -61,6 +61,9 @@ public class Skiing {
         SteepestPathFinder steepestPathFinder = new SteepestPathFinder(input, maxColumns, maxRows, 1500);
 
         findOverAllSteepestDrop(steepestPathFinder);
+//
+//        ArrayList<Integer> steepestPath = new ArrayList<Integer>(steepestPathFinder.getSteepestPath(0, 0));
+//        System.out.print("Steepest path "+ steepestPath.toString());
     }
 
     private static void findOverAllSteepestDrop(SteepestPathFinder steepestPathFinder) {
