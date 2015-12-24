@@ -51,54 +51,42 @@ public class SteepestPathFinder {
 
 //        move up
         int prevX = srcX - 1;
-        if(aBoolean(prevX,srcY,srcValue) && (srcX != (noOfColumns -1))){
+        if(isNextPointPossible(prevX, srcY, srcValue) && (srcX != (noOfColumns -1))){
             traverseFromPoint(new Point(prevX, srcY), srcValue,path);
         }
 
         //move right
         int nextY = srcY + 1;
-        if (aBoolean(srcX, nextY, srcValue)) {
+        if (isNextPointPossible(srcX, nextY, srcValue)) {
             traverseFromPoint(new Point(srcX, nextY), srcValue, path);
         }
 
         //move left
         int prevY = srcY - 1;
-        if (aBoolean(srcX, prevY, srcValue)) {
+        if (isNextPointPossible(srcX, prevY, srcValue)) {
             traverseFromPoint(new Point(srcX, prevY), srcValue, path);
         }
 
         //move down
         int nextX = srcX + 1;
-        if (aBoolean(nextX, srcY, srcValue)) {
+        if (isNextPointPossible(nextX, srcY, srcValue)) {
             traverseFromPoint(new Point(nextX, srcY), srcValue, path);
         }
         path.remove(path.size() - 1);
     }
 
-    private boolean aBoolean(int nextX, int nextY, int srcValue) {
+    private boolean isNextPointPossible(int nextX, int nextY, int srcValue) {
         if ((nextX <= noOfColumns - 1 && nextX >= 0) && (nextY <= noOfRows - 1 && nextY >= 0)) {
             return srcValue > input[nextX][nextY];
         }
         return false;
     }
 
-    private boolean isLeftOrRightPossible(int srcX, int srcY, int srcValue) {
-        boolean isLeftPossible = aBoolean(srcX, srcY - 1, srcValue);
-        boolean isRightPossible = aBoolean(srcX, srcY + 1, srcValue);
-        return isLeftPossible || isRightPossible;
-    }
-
-    private boolean isUpOrDownPossible(int srcX, int srcY, int srcValue) {
-        boolean isUpPossible = aBoolean(srcX - 1, srcY, srcValue);
-        boolean isDownPossible = aBoolean(srcX + 1, srcY + 1, srcValue);
-        return isUpPossible || isDownPossible;
-    }
-
     private boolean isAnySidePossible(int srcX, int srcY, int srcValue){
-        boolean isLeftPossible = aBoolean(srcX, srcY - 1, srcValue);
-        boolean isRightPossible = aBoolean(srcX, srcY + 1, srcValue);
-        boolean isUpPossible = aBoolean(srcX - 1, srcY, srcValue);
-        boolean isDownPossible = aBoolean(srcX + 1, srcY, srcValue);
+        boolean isLeftPossible = isNextPointPossible(srcX, srcY - 1, srcValue);
+        boolean isRightPossible = isNextPointPossible(srcX, srcY + 1, srcValue);
+        boolean isUpPossible = isNextPointPossible(srcX - 1, srcY, srcValue);
+        boolean isDownPossible = isNextPointPossible(srcX + 1, srcY, srcValue);
         return isLeftPossible || isRightPossible || isUpPossible || isDownPossible;
     }
 

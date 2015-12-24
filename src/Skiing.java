@@ -7,7 +7,7 @@ public class Skiing {
             {4, 8, 7, 3},
             {2, 5, 6, 3},
             {6, 3, 2, 5},
-            {4, 4, 1, 6}};
+            {4, 4, 5, 6}};
     static int[][] input = new int[maxColumns][maxRows];
 
     static ArrayList<Integer> overAllSteepestPath = new ArrayList<Integer>();
